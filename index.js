@@ -53,6 +53,6 @@ app.get('/api/index/news', async (req, res) => {
     res.json(result.data);
 })
 
-app.listen(8080, () => {
+app.listen(80, () => {
     console.log('server start: ', 'http://localhost:8080')
 })
