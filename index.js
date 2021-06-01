@@ -53,6 +53,7 @@ app.get('/api/index/news', async (req, res) => {
     res.json(result.data);
 })
 
-app.listen(443, () => {
-    console.log('server start: ', '')
+const port = process.env.PORT || 3000
+app.listen(port, () => {
+    console.log('server start: ', port)
 })
